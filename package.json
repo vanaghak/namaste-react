@@ -1,0 +1,23 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "this is Namaste react by Anagha ",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanaghak/namaste-react.git"
+  },
+  "keywords": [],
+  "author": "Anagha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vanaghak/namaste-react/issues"
+  },
+  "homepage": "https://github.com/vanaghak/namaste-react#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
