@@ -23,6 +23,7 @@ import ReactDOM from "react-dom/client";
 
 const Header = () => {
   return(
+    
         <div className="header">
             <div className="logo-container">
                 <img 
@@ -43,17 +44,17 @@ const Header = () => {
     );
 };
 
-
-const RestaurantCard = () => {
-    return(
+const RestaurantCard = (props) => {
+    const {resName,cusinie } = props;
+ return(
         <div className="res-card" style={{backgroundColor: "#f0f0f0"}}>
             <img
             className="res-logo"
             alt="res-logo"
             src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/tuctdolyoffovvjnxuu4"
             />
-            <h3>A2B</h3>
-            <h4>north indian,south indian</h4>
+            <h3>{props.resName}</h3>
+            <h4>{props.cuisine}</h4>
             <h4>4.5 ratings</h4>
             <h4>30-40 minutes</h4>
        </div>
@@ -66,7 +67,11 @@ const Body = () => {
         <div className="body">
             <div className="search">search</div>
             <div className="res-container">
-              <RestaurantCard/>
+              <RestaurantCard
+              resName="A2B"
+              cuisine="south indian,north indian"
+              />
+              <RestaurantCard resName="pizza Hut" cusinie="Pizza,french fries,donuts" />
              
            </div>
              
